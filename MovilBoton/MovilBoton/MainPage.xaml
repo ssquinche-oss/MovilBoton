@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilBoton.MainPage"
+             Title="Cálculo Aporte IESS">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,30"
+            Spacing="15"
+            VerticalOptions="Center">
+
+            <!-- Título -->
+            <Label
+                Text="Cálculo de Aporte al IESS"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                TextColor="{StaticResource Primary}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Ingrese sus datos para calcular su aporte mensual"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                TextColor="Gray"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <!-- Campo: Nombre -->
+            <Label Text="Nombre" FontSize="14" FontAttributes="Bold" />
+            <Entry
+                x:Name="EntryNombre"
+                Placeholder="Ingrese su nombre"
+                Keyboard="Text"
+                ClearButtonVisibility="WhileEditing" />
+
+            <!-- Campo: Apellido -->
+            <Label Text="Apellido" FontSize="14" FontAttributes="Bold" />
+            <Entry
+                x:Name="EntryApellido"
+                Placeholder="Ingrese su apellido"
+                Keyboard="Text"
+                ClearButtonVisibility="WhileEditing" />
+
+            <!-- Campo: Edad -->
+            <Label Text="Edad" FontSize="14" FontAttributes="Bold" />
+            <Entry
+                x:Name="EntryEdad"
+                Placeholder="Ingrese su edad"
+                Keyboard="Numeric"
+                ClearButtonVisibility="WhileEditing" />
+
+            <!-- Campo: Salario -->
+            <Label Text="Salario" FontSize="14" FontAttributes="Bold" />
+            <Entry
+                x:Name="EntrySalario"
+                Placeholder="Ingrese su salario"
+                Keyboard="Numeric"
+                ClearButtonVisibility="WhileEditing" />
+
+            <!-- Botón Calcular -->
+            <Button
+                x:Name="BtnCalcular"
+                Text="Calcular Aporte IESS"
+                Clicked="OnCalcularClicked"
+                FontAttributes="Bold"
+                FontSize="16"
+                HorizontalOptions="Fill"
+                Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

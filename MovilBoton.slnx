@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MovilBoton/MovilBoton/MovilBoton.csproj" />
+  <Project Path="MovilBoton/MovilBoton.Droid/MovilBoton.Droid.csproj" />
+  <Project Path="MovilBoton/MovilBoton.WinUI/MovilBoton.WinUI.csproj" />
+</Solution>
